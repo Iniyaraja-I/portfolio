@@ -111,13 +111,16 @@ function App() {
 </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">Explore my work <ArrowRight size={17}/></a>
-              <a className="button button-secondary" href="/assets/Iniyaraja-Resume.pdf" download>Download CV <Download size={17}/></a>
+              <a className="button button-secondary" href={`${import.meta.env.BASE_URL}/assets/Iniyaraja-Resume.pdf`} download>Download CV <Download size={17}/></a>
             </div>
             <div className="hero-meta"><span><MapPin size={15}/> Tamil Nadu, India</span><span><BriefcaseBusiness size={15}/> Open to opportunities</span></div>
           </div>
           <div className="hero-visual">
             <div className="photo-backdrop"></div>
-            <div className="photo-frame"><img src="/assets/profile.png" alt="Professional portrait of Iniyaraja" /></div>
+            <div className="photo-frame"><img
+  src={`${import.meta.env.BASE_URL}assets/profile.png`}
+  alt="Profile"
+/></div>
             <div className="floating-card card-code"><span className="mini-icon"><Code2 size={17}/></span><span><b>Clean code</b><small>Thoughtful solutions</small></span></div>
             <div className="floating-card card-ai"><span className="mini-icon"><Sparkles size={17}/></span><span><b>AI-assisted</b><small>Build with purpose</small></span></div>
             <div className="hero-orbit orbit-one"></div><div className="hero-orbit orbit-two"></div>
